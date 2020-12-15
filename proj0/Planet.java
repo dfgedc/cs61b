@@ -35,11 +35,11 @@ public class Planet {
     }
     public double calcForceExertedByX(Planet p){
         double FX = calcForceExertedBy(p)*(p.xxPos - this.xxPos)/calcDistance(p);
-        return Math.abs(FX);
+        return FX;
     }
     public double calcForceExertedByY(Planet p){
         double FY = calcForceExertedBy(p) *(p.yyPos - this.yyPos)/calcDistance(p);
-        return Math.abs(FY);
+        return FY;
     }
     public double calcNetForceExertedByX(Planet[] p ){
         double F = 0;
