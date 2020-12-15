@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Planet {
     public double xxPos;
     public double yyPos;
@@ -5,7 +7,7 @@ public class Planet {
     public double yyVel;
     public double mass;
     public String imgFileName;
-    private static final  double G = 6.67e-11;
+    private static final  double G = 6.67 * 1e-11;
     public Planet(double xxPos, double yyPos, double xxVel, double yyVel, double mass, String imgFileName) {
         this.xxPos = xxPos;
         this.yyPos = yyPos;
@@ -41,31 +43,51 @@ public class Planet {
         double FY = calcForceExertedBy(p) *(p.yyPos - this.yyPos)/calcDistance(p);
         return FY;
     }
-    public double calcNetForceExertedByX(Planet[] ps) {
-        double xForce = 0;
-        for(Planet p : ps) {
-            if (!this.equals(p)) {
-                xForce += calcForceExertedByX(p);
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Planet planet = (Planet) o;
+        return Double.compare(planet.xxPos, xxPos) == 0 &&
+                Double.compare(planet.yyPos, yyPos) == 0 &&
+                Double.compare(planet.xxVel, xxVel) == 0 &&
+                Double.compare(planet.yyVel, yyVel) == 0 &&
+                Double.compare(planet.mass, mass) == 0 &&
+                Objects.equals(imgFileName, planet.imgFileName);
+    }
+
+
+
+    /**
+     Calculates the net X force exerted by all Planets in given array
+     */
+    public double calcNetForceExertedByX(Planet[] allPlanets) {
+        double fXNet = 0.0;
+        for (Planet p: allPlanets) {
+            if (equals(p)) {
+                continue;
+            } else {
+                fXNet += calcForceExertedByX(p);
             }
         }
-
-        return xForce;
+        return fXNet;
     }
 
     /**
-     *  Calculate the net Y force exerted by all planets in a array.
-     *  @param planet[] a Planets array
-     *  @return a double describing the net Y force exerted by other Planets
+     Calculates the net Y force exerted by all Planets in given array
      */
-    public double calcNetForceExertedByY(Planet[] ps) {
-        double yForce = 0;
-        for(Planet p : ps) {
-            if (!this.equals(p)) {
-                yForce += calcForceExertedByY(p);
+    public double calcNetForceExertedByY(Planet[] allPlanets) {
+        double fYNet = 0.0;
+        for (Planet p: allPlanets) {
+            if (equals(p)) {
+                continue;
+            } else {
+                fYNet += calcForceExertedByY(p);
             }
         }
-
-        return yForce;
+        return fYNet;
     }
 
     public void update(double seconds,double xxForce,double yyForce){
