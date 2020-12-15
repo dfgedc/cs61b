@@ -45,21 +45,6 @@ public class Planet {
     }
 
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Planet planet = (Planet) o;
-        return Double.compare(planet.xxPos, xxPos) == 0 &&
-                Double.compare(planet.yyPos, yyPos) == 0 &&
-                Double.compare(planet.xxVel, xxVel) == 0 &&
-                Double.compare(planet.yyVel, yyVel) == 0 &&
-                Double.compare(planet.mass, mass) == 0 &&
-                Objects.equals(imgFileName, planet.imgFileName);
-    }
-
-
-
     /**
      Calculates the net X force exerted by all Planets in given array
      */
