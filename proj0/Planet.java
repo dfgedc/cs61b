@@ -1,11 +1,11 @@
 public class Planet {
-   public double xxPos;
+    public double xxPos;
     public double yyPos;
     public double xxVel;
     public double yyVel;
     public double mass;
     public String imgFileName;
-    public static final  double G = 6.67e-11;
+    private static final  double G = 6.67e-11;
     public Planet(double xxPos, double yyPos, double xxVel, double yyVel, double mass, String imgFileName) {
         this.xxPos = xxPos;
         this.yyPos = yyPos;
@@ -41,23 +41,31 @@ public class Planet {
         double FY = calcForceExertedBy(p) *(p.yyPos - this.yyPos)/calcDistance(p);
         return FY;
     }
-    public double calcNetForceExertedByX(Planet[] p ){
-        double F = 0;
-        for (int i = 0; i < p.length; i++) {
-            if(!this.equals(p[i])) {
-                F += calcForceExertedByX(p[i]);
-            }
-            }
-        return Math.abs(F);
-    }
-    public double calcNetForceExertedByY(Planet[] p){
-        double F = 0;
-        for (int i = 0; i < p.length; i++) {
-            if (!this.equals(p[i])) {
-                F += calcForceExertedByY(p[i]);
+    public double calcNetForceExertedByX(Planet[] ps) {
+        double xForce = 0;
+        for(Planet p : ps) {
+            if (!this.equals(p)) {
+                xForce += calcForceExertedByX(p);
             }
         }
-        return Math.abs(F);
+
+        return xForce;
+    }
+
+    /**
+     *  Calculate the net Y force exerted by all planets in a array.
+     *  @param planet[] a Planets array
+     *  @return a double describing the net Y force exerted by other Planets
+     */
+    public double calcNetForceExertedByY(Planet[] ps) {
+        double yForce = 0;
+        for(Planet p : ps) {
+            if (!this.equals(p)) {
+                yForce += calcForceExertedByY(p);
+            }
+        }
+
+        return yForce;
     }
 
     public void update(double seconds,double xxForce,double yyForce){
