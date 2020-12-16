@@ -71,10 +71,15 @@ public class IntList {
         if (A == null || A.rest == null) {
             return A;
         } else {
-            IntList reversed = reverse(A.rest);
-            A.rest.rest= A;
-            A.rest = null;
-            return reversed;
+           IntList prev = null;
+           IntList curr = A;
+           while (curr!=null){
+               IntList next = curr.rest;
+               curr.rest = prev;
+               prev = curr;
+               curr = next;
+           }
+           return prev;
         }
     }
     /**
