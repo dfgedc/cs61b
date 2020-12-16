@@ -1,7 +1,7 @@
 
 public class NBody {
     public static double readRadius(String word) {
-        In in = new In("./data/planets.txt");
+        In in = new In(word);
         double firstItemInFile = in.readDouble();
         double radius = in.readDouble();
         return radius;
