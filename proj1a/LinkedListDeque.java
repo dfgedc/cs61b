@@ -1,4 +1,4 @@
-public class LinkedListDeque<T> implements Deque<T>{
+public class LinkedListDeque<T> {
     private int size ;
     private Node first;
     private class Node {
@@ -35,7 +35,7 @@ public class LinkedListDeque<T> implements Deque<T>{
 
         return getRecursiveHelper(currentNode.next, index - 1);
     }
-    @Override
+
     public int size() {
         return size(first);
     }
@@ -44,7 +44,7 @@ public class LinkedListDeque<T> implements Deque<T>{
             return  1;
         return 1+size(node.next);
     }
-    @Override
+
     public boolean isEmpty() {
         if(first.next==first&&first.prev == first){
             return true;
@@ -52,21 +52,20 @@ public class LinkedListDeque<T> implements Deque<T>{
         return false;
     }
 
-    @Override
+
     public void addLast(T item) {
         first.prev = new Node(item, first.prev, first);
         first.prev.prev.next = first.prev;
         size++;
     }
 
-    @Override
+
     public void addFirst(T item) {
           first.prev = new Node(item,first.prev,first);
           first.prev.prev.next = first.prev;
           size+=1;
     }
 
-    @Override
     public void printDeque() {
             if(first.item==null) return;
             while(first.next!=null){
@@ -75,8 +74,7 @@ public class LinkedListDeque<T> implements Deque<T>{
             }
     }
 
-    @Override
-    public T removeFirst() {
+  public  T removeFirst(){
         if(first.next == first){
             return null;
         }
@@ -87,7 +85,7 @@ public class LinkedListDeque<T> implements Deque<T>{
         return removeItem;
     }
 
-    @Override
+
     public T removeLast() {
         if(first.prev == first){
             return null;
@@ -100,7 +98,7 @@ public class LinkedListDeque<T> implements Deque<T>{
         return removeItem;
     }
 
-    @Override
+
     public T get(int index) {
      //   return null;
         if(index>=size){
