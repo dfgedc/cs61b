@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca9c5ac4-9f68-4e4b-8971-e0aa8614e149" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../hw1/synthesizer/AbstractBoundedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw1/synthesizer/BoundedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/Flik/FlikTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/IntList/IntList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj0/NBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj0/Planet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1a/ArrayDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1a/LinkedListDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArrayDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Deque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkedListDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OffByN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OffByOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Palindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library-sp18/data/words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw1/synthesizer/GuitarString.java.skeleton" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/synthesizer/GuitarString.java.skeleton" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/LeapYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/LeapYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/Intlist/IntList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/Intlist/IntList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/Arithmetic/Arithmetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/Arithmetic/Arithmetic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/IntList/IntListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/IntList/IntListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab4/magic_word.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/magic_word.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab4/self_reflection.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/self_reflection.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj0/examples/BasicInDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj0/examples/BasicInDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj0/examples/In.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj0/examples/In.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj0/examples/InDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj0/examples/InDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdDraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj0/examples/StdDraw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdDrawDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj0/examples/StdDrawDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj0/examples/StdOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj0/examples/StdRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj0/examples/StdRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PalindromeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/PalindromeFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestPalindrome.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\localware" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lpM8vZGYvft8NIFIbR6JAR3pLs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/library-sp18/data" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\code1\skeleton-sp18\proj1b\library-sp18\data" />
+      <recent name="F:\code1\skeleton-sp18\proj1b" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestPalindrome.testPalindrome">
+    <configuration name="PalindromeFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PalindromeFinder" />
+      <module name="proj1b" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPalindrome.testPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1b" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPalindrome" />
+      <option name="METHOD_NAME" value="testPalindrome" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPalindrome.testWordToDeque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1b" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPalindrome" />
+      <option name="METHOD_NAME" value="testWordToDeque" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestPalindrome.testPalindrome" />
+        <item itemvalue="Application.PalindromeFinder" />
+        <item itemvalue="JUnit.TestPalindrome.testWordToDeque" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca9c5ac4-9f68-4e4b-8971-e0aa8614e149" name="Default Changelist" comment="" />
+      <created>1608289425061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608289425061</updated>
+      <workItem from="1608289426421" duration="1279000" />
+      <workItem from="1608293630547" duration="13551000" />
+      <workItem from="1608348699524" duration="678000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1201" y="300" key="#com.intellij.ide.util.MemberChooser" timestamp="1608312365783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1201" y="300" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608312365783" />
+    <state x="699" y="289" key="FileChooserDialogImpl" timestamp="1608295332981">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="699" y="289" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608295332981" />
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1608312312149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608312312149" />
+    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1608312312149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608312312149" />
+    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1608312312149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608312312149" />
+    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1608312312149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608312312149" />
+    <state x="417" y="137" key="SettingsEditor" timestamp="1608295338880">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="417" y="137" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608295338880" />
+  </component>
+</project>
