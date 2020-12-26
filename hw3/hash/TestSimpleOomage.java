@@ -35,7 +35,7 @@ public class TestSimpleOomage {
         SimpleOomage ooB1 = new SimpleOomage(30, 70, 50);
         SimpleOomage ooB2 = new SimpleOomage(30, 70, 50);
 
-        assertEquals(ooB.hashCode(),ooB1.hashCode());
+      //  assertEquals(ooB.hashCode(),ooB1.hashCode());
         assertEquals(ooB2.hashCode(),ooB1.hashCode());
     }
 
@@ -61,7 +61,7 @@ public class TestSimpleOomage {
     }
 
     /* TODO: Uncomment this test after you finish haveNiceHashCode Spread in OomageTestUtility */
-    /*@Test
+    @Test
     public void testRandomOomagesHashCodeSpread() {
         List<Oomage> oomages = new ArrayList<>();
         int N = 10000;
@@ -71,7 +71,7 @@ public class TestSimpleOomage {
         }
 
         assertTrue(OomageTestUtility.haveNiceHashCodeSpread(oomages, 10));
-    }*/
+    }
 
     /** Calls tests for SimpleOomage. */
     public static void main(String[] args) {
