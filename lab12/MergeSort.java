@@ -90,5 +90,5 @@ public class MergeSort {
         Queue<Item> q2 = mergeSort(qRight);
         return mergeSortedQueues(q1, q2);
     }
-    
+
 }
