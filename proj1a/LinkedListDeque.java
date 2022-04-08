@@ -1,114 +1,99 @@
-public class LinkedListDeque<T> {
-    private int size ;
-    private Node first;
-    private class Node {
-        T item;
-        Node prev;
-        Node next;
 
-        Node(T i, Node p, Node n) {
-            item = i;
-            prev = p;
-            next = n;
+
+class LinkedListDeque<T>{
+    public void printDeque() {
+        Node node = head;
+        while (node.right!=null){
+            System.out.print(node.element+" ");
+            node = node.right;
         }
     }
 
-    public LinkedListDeque(){
-        first = new Node(null,null,null);
-        first.prev = first;
-        first.next = first;
-        size = 0;
-    }
-    public T getRecursive(int index){
-        if (index >= size) {
-            return null;
+    class Node<T>{
+        private T element;
+
+        private Node<T> right;
+
+        public Node(T element, Node<T> right) {
+            this.element = element;
+            this.right = right;
         }
 
-        return getRecursiveHelper(first.next, index);
-
-    }
-    /** Helper method for getRecursive */
-    private T getRecursiveHelper(Node currentNode, int index) {
-        if (index == 0) {
-            return currentNode.item;
+        public T getElement() {
+            return element;
         }
 
-        return getRecursiveHelper(currentNode.next, index - 1);
-    }
-
-    public int size() {
-        return size(first);
-    }
-    private int size(Node node){
-        if(node.next==null)
-            return  1;
-        return 1+size(node.next);
-    }
-
-    public boolean isEmpty() {
-        if(first.next==first&&first.prev == first){
-            return true;
+        public void setElement(T element) {
+            this.element = element;
         }
-        return false;
+
+        public Node<T> getRight() {
+            return right;
+        }
+
+        public void setRight(Node<T> right) {
+            this.right = right;
+        }
+    }
+    private int size = 0;
+    private int len;
+    Node<T> head ;
+    Node<T> tail;
+
+    public LinkedListDeque() {
+        head = new Node<>(null,null);
+        tail = new Node<>(null,null);
+        head.setRight(tail);
     }
 
-
-    public void addLast(T item) {
-        first.prev = new Node(item, first.prev, first);
-        first.prev.prev.next = first.prev;
+    public void addFirst(T item)
+    {
+        Node<T>  node= new Node<>(item,head);
+        //  node  =head.right;
+        head = node;
         size++;
     }
-
-
-    public void addFirst(T item) {
-          first.prev = new Node(item,first.prev,first);
-          first.prev.prev.next = first.prev;
-          size+=1;
+    public void addLast(T item)
+    {
+        Node<T> node = new Node<>(item,null);
+        tail = node;
+        size++;
     }
-
-    public void printDeque() {
-            if(first.item==null) return;
-            while(first.next!=null){
-                System.out.print(first.item);
-                first = first.next;
-            }
+    public boolean isEmpty()
+    {
+        return size == 0;
     }
-
-  public  T removeFirst(){
-        if(first.next == first){
+    public int size()
+    {
+        return size;
+    }
+    public void removeFirst()
+    {
+        if(size==0){
+            return;
+        }else{
+            head = head.right;
+            size--;
+        }
+    }
+    public T removeLast()
+    {
+        if(size==0){
             return null;
+        }else{
+            T element = tail.element;
+            tail.right = null;
+            size --;
+            return element;
         }
-        T removeItem = first.next.item;
-        first.next = first.next.next;
-        first.next.prev = first;
-        size--;
-        return removeItem;
+
     }
-
-
-    public T removeLast() {
-        if(first.prev == first){
-            return null;
-
+    public T get(int index)
+    {
+        Node e = head;
+        for (int i = 0; i < index; i++) {
+            e = e.right;
         }
-        T removeItem = first.prev.item;
-        first.prev = first.prev.prev;
-        first.prev.next = first;
-        size--;
-        return removeItem;
-    }
-
-
-    public T get(int index) {
-     //   return null;
-        if(index>=size){
-            return null;
-        }
-        Node currentNode = first.next;
-        while (index!=0){
-            currentNode = currentNode.next;
-            index--;
-        }
-        return currentNode.item;
+        return (T)e.getElement();
     }
 }
